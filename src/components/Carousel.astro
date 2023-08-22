@@ -1,0 +1,119 @@
+<section class="splide" aria-label="Splide Basic HTML Example">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <img class="d-block mx-auto" src="assets/money.png" alt="">
+          <div class="carousel__description">
+            <p class="text-center fw-bold">
+              Improve service quality
+              while reducing costs and
+              adding greater value
+            </p>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <img class="d-block mx-auto" src="assets/integrate.png" alt="">
+          <div>
+            <p class="text-center fw-bold">
+              Integrate your collaboration systems anytime
+            </p>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <img class="d-block mx-auto" src="assets/innovation.png" alt="">
+          <div class="carousel__description">
+            <p class="text-center fw-bold">
+              Coordinate resources to promote innovation
+            </p>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <img class="d-block mx-auto" src="assets/team.png" alt="">
+          <div class="carousel__description">
+            <p class="text-center fw-bold">
+              Improve your Medical Teams’ Collaboration Workstream
+            </p>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <img class="d-block mx-auto" src="assets/IA.png" alt="">
+          <div>
+            <p class="text-center fw-bold">
+              Improve outcomes and everyone’s experience with more AI and IoT
+            </p>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <img class="d-block mx-auto" src="assets/medical.png" alt="">
+          <div class="carousel__description">
+            <p class="text-center fw-bold">
+              Make it easier for patients
+              to access healthcare services
+            </p>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <img class="d-block mx-auto" src="assets/virtual.png" alt="">
+          <div class="carousel__description">
+            <p class="text-center fw-bold">
+              Activate virtual care
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener( 'DOMContentLoaded', function() {
+   var splide = new Splide( '.splide',{
+     start  : 1,
+     perPage: 3,
+     rewind: true,
+     drag   : 'free',
+     snap   : true,
+     type: 'loop',
+     autoplay: true,
+     breakpoints: {
+		991.98: {
+			perPage: 1,
+		},
+  }
+   } );
+   splide.mount();
+ } );
+ </script>
+
+<style is:global>
+    .carousel-1{
+    background-color: var(--yellow);
+    margin-top: -5%;
+    box-shadow: var(--shadow);
+  }
+
+  .splide__arrow--prev{
+    left: -5%;
+  }
+
+  .splide__arrow--next{
+    right: -5%;
+  }
+
+  .splide__arrow{
+    border-radius: 0;
+  }
+
+  .splide__pagination{
+    bottom: -1.5em;
+  }
+
+  .splide__pagination__page.is-active{
+    background-color: var(--navy);
+    opacity: 1;
+  }
+
+  .carousel__description{
+    width: 75%;
+    margin: 0 auto;
+  }
+</style>

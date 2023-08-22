@@ -1,0 +1,38 @@
+<button id="topBtn" title="Go to top">
+	<img src="assets/arrow-up.png" alt="">
+</button>
+
+<style>
+	#topBtn {
+    background-color: var(--blue);
+    border: none;
+    border-radius: 0px;
+    bottom: 20px;
+    color: variables.$white;
+    cursor: pointer;
+    display: none;
+    font-size: 18px;
+    outline: none;
+    padding: 4px 8px 6px;
+    position: fixed;
+    right: 30px;
+    transition: all 0.3s ease;
+    z-index: 99;
+  }
+
+  #topBtn img{
+	width: 24px;
+  filter: brightness(0);
+  }
+
+  #topBtn:hover {
+    background-color: var(--red);
+    box-shadow: var(--shadow);
+    transform: scale(1.1);
+    transition: all 0.1s ease;
+  }
+
+  #topBtn:hover img{
+     filter: brightness(1);
+  }
+</style>

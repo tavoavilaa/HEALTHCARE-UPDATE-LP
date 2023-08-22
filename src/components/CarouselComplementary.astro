@@ -1,0 +1,107 @@
+<section class="splide" aria-label="Splide Basic HTML Example" id="splideComplementary">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <div>
+            <p>More than <b>65% Satisfaction Index</b> <br>
+              per query increase for <b>traditional consultation</b></p>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div>
+            <p>More than <b>25% reduction in the Number of Chronic patients Consultations</b>  </p>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div>
+            <p>More than <b>27% Waiting times Reduction</b>  from 90min (average) to 25min (Pre-booking)</p>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div>
+            <p>More than <b>23% Reduction in Treatment Abandonment</b>  using Proactive Outreach</p>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div>
+            <p>More than <b>18% Reduction in Operating Costs</b> – Hospitalization/Pharmacy/Nursing (UC)</p>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div>
+            <p><b>35% Productivity increase</b><br>
+              in Emergency management <br>
+              among Doctors and Nurses</p>
+          </div>
+        </li>
+
+        <li class="splide__slide">
+          <div>
+            <p>More than <b>80% Satisfaction Index <br> increase</b> for <b>Emergency Services</b></p>
+          </div>
+        </li>
+
+        <li class="splide__slide">
+          <div>
+            <p>More than <b>65% Satisfaction Index</b> <br>
+              per query increase for <b>traditional consultation</b></p>
+          </div>
+        </li>
+      </ul>
+
+
+
+ 
+
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener( 'DOMContentLoaded', function() {
+   var splide = new Splide( '#splideComplementary',{
+     start  : 1,
+     perPage: 3,
+     rewind: true,
+     drag   : 'free',
+     snap   : true,
+     type: 'loop',
+    autoplay: true,
+     focus  : 'center',
+     breakpoints: {
+		991.98: {
+			perPage: 1,
+		},
+  }
+   } );
+   splide.mount();
+ } );
+ </script>
+
+<style>
+  .splide__slide.is-visible.is-active{
+    background-color: var(--red); 
+    color: var(--white);
+    transition: all .3s ease;
+    transform: translateY(-8px);
+    position: relative;
+    z-index: 3;
+  }
+
+  .splide__slide{
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all .3s ease;
+    margin-bottom: 16px;
+  }
+
+  .splide__slide div p{
+    margin-bottom: 0;
+  }
+
+
+
+
+</style>

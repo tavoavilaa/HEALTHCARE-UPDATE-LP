@@ -1,0 +1,124 @@
+---
+import Button from '../components/Button.astro';
+---
+<nav class="navbar navbar-expand-xxl container-fluid sticky-top p-4">
+  <div class="container">
+    <div class="avaya-navbar-logo">
+      <a class="avaya-tag-logo img-fluid" href="index.html"
+        ><img src="assets/avaya-logo-red.png" alt="logo avaya" /></a
+      >
+    </div>
+    <!-- <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <div class="hide-lg">
+      <Button color="blue" text="Get your Experience" href="#form"/>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <!-- <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			  Dropdown
+			</a>
+			<ul class="dropdown-menu">
+			  <li><a class="dropdown-item" href="#">Action</a></li>
+			  <li><a class="dropdown-item" href="#">Another action</a></li>
+			  <li><hr class="dropdown-divider"></li>
+			  <li><a class="dropdown-item" href="#">Something else here</a></li>
+			</ul>
+		  </li> -->
+      </ul>
+      <div class="hstack gap-3">
+        <Button color="blue" text="Get your Experience" href="#form"/>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+<style>
+  .navbar{
+		background-color: var(--gray-100);
+	}
+
+  .navDown {
+    background-color: var(--gray-100);
+    box-shadow: var(--shadow);
+    transition: all 0.5s ease;
+  }
+
+  .avaya-navbar-logo {
+    align-items: center;
+    display: flex;
+  }
+
+  .avaya-tag-logo img{
+    width: 120px;
+  }
+
+  @media (max-width: 991.98px){
+  	.avaya-tag-logo img {
+     max-width: 90px;
+    }
+  }
+
+  .avaya-navbar img {
+    max-width: 120px;
+  }
+
+
+
+  .navbar {
+    padding: 24px;
+    transition: all 0.5s ease;
+  }
+
+  .nav-link {
+    color: var(--denim) !important;
+    font-size: 1rem;
+    transition: all 0.5s ease;
+
+   
+  }
+
+  .nav-link:hover {
+      color: var(--red) !important;
+      transition: all 0.3s ease;
+    }
+
+  .nav-link.active {
+    color: var(--denim) !important;
+    font-weight: 700;
+  }
+
+  .avaya-navbar {
+    justify-content: space-between;
+  }
+
+  .avaya-navbar__right-content {
+    margin: 0 auto;
+  }
+
+  .avaya-navbar__right-content {
+    gap: 24px;
+  }
+
+  .hide-lg{
+    display: none;
+  }
+
+  @media (max-width: 991.98px){
+    .hide-lg{
+    display: block;
+    }
+  }
+</style>

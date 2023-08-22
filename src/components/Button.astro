@@ -1,0 +1,63 @@
+---
+export interface Props {
+  color: string;
+  text: string;
+  href: string;
+}
+
+const { color, text, href } = Astro.props;
+---
+
+
+<a class:list={['avaya-btn', color ]} href={href}>
+    <span>{text}</span>
+</a>
+
+<style is:global>
+    .avaya-btn{
+        padding: 10px 24px 10px;
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
+        outline: none;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .avaya-btn.blue{
+        background: var(--blue);
+        border: 0px solid var(--blue);
+        box-shadow: 3px 2px 20px #4e4c4c59;
+        color: var(--black);
+    }
+
+    .avaya-btn.blue:hover{
+        background: var(--red);
+        border: 0px solid var(--blue);
+        box-shadow: 3px 2px 20px #4e4c4c59;
+        color: var(--white);
+        transition: all 0.3s;
+    }
+
+    .avaya-btn.blue-navy{
+        background: var(--blue);
+        border: 0px solid var(--blue);
+        box-shadow: 3px 2px 20px #4e4c4c59;
+        color: var(--black);
+    }
+
+    .avaya-btn.blue-navy:hover{
+        background: var(--navy);
+        border: 0px solid var(--blue);
+        box-shadow: 3px 2px 20px #4e4c4c59;
+        color: var(--white);
+        transition: all 0.3s;
+    }
+</style>

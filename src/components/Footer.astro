@@ -1,0 +1,186 @@
+---
+var year = new Date().getFullYear();
+---
+<footer class="footer">
+  <div class="wrapper footer__container">
+    <ul class="social">
+      <li>
+        <a href="https://twitter.com/avaya?elqTrackId=50e2aae1faad42b4b0d5a5543aa66fd1&amp;elqaid=17127&amp;elqat=2" target="_blank" title="twitter">
+          <img class="social__icon" src="assets/tw.png" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/avaya?elqTrackId=80b338ba4d1d4ffeb3c1a3df24f133c5&amp;elqaid=17127&amp;elqat=2" target="_blank" title="facebook">
+          <img class="social__icon" src="assets/fb.png" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/Avaya?elqTrackId=3690761a774744a7b60c5d284a143748&amp;elqaid=17127&amp;elqat=2" target="_blank" title="youtube">
+          <img class="social__icon" src="assets/yt.png" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/avaya/?elqTrackId=d88dd023ee544c34a566f5fd5ba3a69e&amp;elqaid=17127&amp;elqat=2" target="_blank" title="linkedin">
+          <img class="social__icon" src="assets/in.png" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/avayainc/?elqTrackId=64b64993100144bf9e8a8a708a89ff01&amp;elqaid=17127&amp;elqat=2" target="_blank" title="instagram">
+          <img class="social__icon" src="assets/ig.png" alt="">
+        </a>
+      </li>
+  </ul>
+    <!-- <div class="footer__container__logo">
+      <img src="assets/avaya-logo.png" alt="avaya logo" />
+    </div> -->
+    <div class="footer__container__rrss">
+      <div class="end-legal legal">
+        <!-- FOOTER LINKS -->
+      </div>
+    </div>
+    <div class="footer__container__links">
+      <div class="end-legal legal">
+        <span class="fy">&nbsp; &copy; {year} Avaya LLC.</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+  <script 
+  type="text/javascript"
+  src="https://www.avaya.com/en/javascript/insert-cookielink-EN-V1-060219.js">
+  </script>
+
+
+
+<style>
+  .optanon-show-settings span{
+    color: var(--black) !important;
+  }
+  .footer__container__links {
+    color: var(--black) !important;
+    text-decoration: none !important;
+  }
+
+  .end-legal {
+    display: flex;
+    color: var(--black) !important;
+    text-decoration: none !important;
+    font-size: 14px !important;
+  }
+
+  .end-legal p {
+    margin: 0 !important;
+    text-decoration: none !important;
+    font-size: 14px !important;
+  }
+
+  .fy {
+    font-size: 14px;
+    color: var(--black) !important;
+  }
+
+  .optanon-show-settings:hover span {
+    color: var(--black) !important;
+  }
+
+  .optanon-show-settings span {
+    color: var(--black)!important;
+  }
+
+  footer {
+    background-color: var(--gray-100);
+    padding: 12px 0 12px;
+  }
+
+  .footer__container {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    place-items: center;
+  }
+
+  .footer__container__logo img {
+    width: 120px;
+  }
+
+  .footer__container__rrss {
+    display: flex;
+    gap: 16px;
+  }
+
+  .legalLink a {
+    color: var(--white) !important;
+    text-decoration: none !important;
+    font-size: 14px !important;
+  }
+
+  .optanon-show-settings span {
+    color: var(--red) !important;
+    font-family: var(--font-family) !important;
+    font-size: 14px !important;
+  }
+
+  .legalLink {
+    color: white !important;
+    font-size: 14px !important;
+  }
+
+  .footer__container__rrss a img {
+    transition: transform 0.3s ease;
+  }
+
+  .footer__container__rrss a img:hover {
+    transform: scale(1.1);
+    transition: transform 0.1s ease;
+  }
+  @media (max-width: 991.98px) {
+    .footer__container {
+      grid-template-columns: 1fr;
+    }
+
+    .end-legal {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .fy {
+      text-align: center;
+    }
+  }
+  .legalLink a {
+    color: var(--white) !important;
+    font-size: 14px !important;
+  }
+  .optanon-show-settings {
+    color: var(--white) !important;
+    font-size: 14px !important;
+  }
+  .optanon-show-settings:hover {
+    color: var(--white) !important;
+    font-size: 14px !important;
+  }
+
+  .social{
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    margin-top: 8px;
+    padding: 0;
+  }
+  
+  .social__icon{
+    width: 32px;
+    transition: transform .3s ease;
+    background-color: white;
+  }
+
+ .social__icon:hover{
+    transition: transform .3s ease;
+    transform: translateY(-4px);
+  }
+
+  .end-legal{
+    padding-top: 8px;
+  }
+</style>

@@ -1,0 +1,924 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Form from "../components/Form.astro";
+import Banner from "../components/Banner.astro";
+import Carousel from "../components/Carousel.astro";
+import Button from "../components/Button.astro";
+import Navbar from "../components/Navbar.astro";
+import FabTop from "../components/FabTop.astro";
+import Footer from "../components/Footer.astro";
+import CarouselComplementary from "../components/CarouselComplementary.astro";
+---
+
+<Layout
+  title="Avaya"
+  description="Avaya"
+>
+  <Navbar />
+  <FabTop />
+  <header class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-6">
+          <div class="pe-lg-5">
+            <h1 class="hero__title text-black mb-3 text-uppercase">
+              Avaya for Healthcare
+            </h1>
+            <p class="hero__description text-black">
+              Avaya solutions enable you to <b>design the best experiences</b> in an era where healthcare and technology are combined to enable better service levels, greater collaboration to grow your healthcare business, and provide innovative solutions and actions to increase business performance.
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <figure>
+            <img class="w-100 mx-auto d-block" src="assets/hero.png" alt="man and woman talking" fetchpriority="high">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="bg-blue-feather pb-5">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-12">
+          <div class="my-5">
+            <h2 class="text-white text-center fs-1">
+              Healthcare is #Evolving
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="row pb-5">
+        <div class="col-12 col-lg-4">
+          <div class="counter" id="counter-section">
+              <h2 class="text-white counter__number position-relative" data-target="90">
+                0
+              </h2>
+              <p class="text-white counter__description mt-3">
+                of customers use their mobile devices and wearables to share information and data
+              </p> 
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="counter">
+            <h2 class="text-white counter__number position-relative" data-target="80">
+              0
+            </h2>
+            <p class="text-white counter__description mt-3">
+              of customers research health related information online and want to be well informed
+            </p> 
+        </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="counter">
+            <h2 class="text-white counter__number position-relative" data-target="74">
+              0
+            </h2>
+            <p class="text-white counter__description mt-3">
+              of Millenials prefer virtual consultations and healthcare access wherever they are
+            </p> 
+        </div>
+        </div>
+      </div>
+   
+      <hr class="text-white p-0 m-0">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex flex-column flex-lg-row gap-5 py-3 mt-3 justify-content-center mb-4 align-items-center">
+            <h2 class="text-white text-center avaya-title text-uppercase">
+              Build the best healthcare
+experiences NOW
+            </h2>
+            <div>
+              <Button color="blue" text="Get this offer" href="#form"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+  
+
+  <section class="container p-5 carousel-1">
+    <div class="row">
+      <div class="col-12">
+        <Carousel/>
+      </div>
+    </div>
+  </section>
+
+
+ 
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="my-5 pt-5">
+            <h2 class="text-black text-center avaya-title text-uppercase">
+              Use Cases
+            </h2>
+          </div>
+        </div>
+      </div>
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="d-flex flex-column justify-content-center align-items-center pb-5">
+              <ul class="nav nav-pills mb-3 avaya-pills" id="pills-tab" role="tablist">
+                <li class="nav-item mx-3" role="presentation">
+                  <button class="nav-link active text-black" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1" aria-selected="true">Health consultations <br> booking and reminders</button>
+                </li>
+                <li class="nav-item mx-3" role="presentation">
+                  <button class="nav-link text-black" id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-2" aria-selected="false">Customer <br> Notifications</button>
+                </li>
+                <li class="nav-item mx-3" role="presentation">
+                  <button class="nav-link text-black" id="pills-3-tab" data-bs-toggle="pill" data-bs-target="#pills-3" type="button" role="tab" aria-controls="pills-3" aria-selected="false">Video <br> Consultation</button>
+                </li>
+                <li class="nav-item mx-3" role="presentation">
+                  <button class="nav-link text-black" id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4" aria-selected="false">Virtual <br> Waiting room</button>
+                </li>
+                <li class="nav-item mx-3" role="presentation">
+                  <button class="nav-link text-black" id="pills-5-tab" data-bs-toggle="pill" data-bs-target="#pills-5" type="button" role="tab" aria-controls="pills-5" aria-selected="false">Automated <br> transactions</button>
+                </li>
+          
+              </ul>
+
+              <div class="tab-content" id="pills-tabContent">
+                <!-- Health consultations booking and reminders -->
+                <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab" tabindex="0">
+                    <div class="row avaya-pills__content pt-3">
+                      <div class="col-12 col-lg-5">
+                        <figure class="avaya-square avaya-border--1">
+                          <img src="assets/header-card-1.jpg" alt="" class="w-100">
+                        </figure>
+                      </div>
+                      <div class="col-12 col-lg-7">
+                        <div class="discoverCard d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-center gap-lg-4 px-5 flex-grow-1 text-black mb-3">
+                          <figure class="discoverCard__icon-container">
+                              <img class="discoverCard__icon" src="assets/icon-3.png" alt=icon>
+                          </figure>
+                          <div class="w-100">
+                              <h6 class="fw-bold">Challenge: </h6>
+                              <p class="mb-0">
+                                Scheduling appointments and sending appointment reminders is a low-value and time-consuming activity for customer service agents and professionals.
+                              </p>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="discoverCard d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-center gap-lg-4 px-5 flex-grow-1 text-black mb-3">
+                          <figure class="discoverCard__icon-container">
+                              <img class="discoverCard__icon" src="assets/icon-12.png" alt=icon>
+                          </figure>
+                          <div class="w-100">
+                              <h6 class="fw-bold">Solution: </h6>
+                              <ul class="square">
+                                <li>AI-enabled appointment scheduling services</li>
+                                <li>Automatically send appointment reminders across multiple channels (supports Voice, Chat, SMS and Social Media channels)</li>
+                                <li>Integrates with CRM Applications</li>
+                                <li>HIPAA compliant</li>
+                              </ul>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="discoverCard d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-center gap-lg-4 px-5 flex-grow-1 text-black mb-3">
+                          <figure class="discoverCard__icon-container">
+                              <img class="discoverCard__icon" src="assets/icon-6.png" alt=icon>
+                          </figure>
+                          <div class="w-100">
+                              <h6 class="fw-bold">Outcome: </h6>
+                              <ul class="square">
+                                <li>Fewer missed medical appointments</li>
+                                <li>Customer service costs reduction</li>
+                                <li>More time for agents to focus on critical activities</li>
+                              </ul>
+                          </div>
+                        </div>
+                  
+                      </div>
+                    </div>
+                  </div>
+                <!-- Customer Notifications -->
+                <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab" tabindex="0">
+                    <div class="row avaya-pills__content pt-3">
+                      <div class="col-12 col-lg-5">
+                        <figure class="avaya-square avaya-border--1">
+                          <img src="assets/header-card-2.jpg" alt="" class="w-100">
+                        </figure>
+                      </div>
+                      <div class="col-12 col-lg-7">
+                        <div class="discoverCard d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-center gap-lg-4 px-5 flex-grow-1 text-black mb-3">
+                          <figure class="discoverCard__icon-container">
+                              <img class="discoverCard__icon" src="assets/icon-3.png" alt=icon>
+                          </figure>
+                          <div class="w-100">
+                              <h6 class="fw-bold">Challenge: </h6>
+                              <p class="mb-0">
+                                Need to notify and/or remind patients about events and transactions, such as appointments, appointment status, payments, etc., while customer service resources are limited.
+                              </p>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="discoverCard d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-center gap-lg-4 px-5 flex-grow-1 text-black mb-3">
+                          <figure class="discoverCard__icon-container">
+                              <img class="discoverCard__icon" src="assets/icon-12.png" alt=icon>
+                          </figure>
+                          <div class="w-100">
+                              <h6 class="fw-bold">Solution: </h6>
+                              <ul class="square">
+                                <li>Multiple communication channels support (voice, email, SMS, social media)</li>
+                                <li>Multilingual support and automatic AI translation</li>
+                                <li>Highly scalable and fast implementation</li>
+                              </ul>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="discoverCard d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-center gap-lg-4 px-5 flex-grow-1 text-black mb-3">
+                          <figure class="discoverCard__icon-container">
+                              <img class="discoverCard__icon" src="assets/icon-6.png" alt=icon>
+                          </figure>
+                          <div class="w-100">
+                              <h6 class="fw-bold">Outcome: </h6>
+                              <ul class="square">
+                                <li>Costs reduction and quicker answers</li>
+                                <li>Quality levels increase</li>
+                              </ul>
+                          </div>
+                        </div>
+                  
+                      </div>
+                    </div>
+                </div>
+                <!-- Video Consultation -->
+                <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab" tabindex="0">
+                    <div class="row avaya-pills__content pt-3">
+                      <div class="col-12 col-lg-5">
+                        <figure class="avaya-square avaya-border--1">
+                          <img src="assets/header-card-3.jpg" alt="" class="w-100">
+                        </figure>
+                      </div>
+                      <div class="col-12 col-lg-7">
+                        <div class="discoverCard d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-center gap-lg-4 px-5 flex-grow-1 text-black mb-3">
+                          <figure class="discoverCard__icon-container">
+                              <img class="discoverCard__icon" src="assets/icon-3.png" alt=icon>
+                          </figure>
+                          <div class="w-100">
+                              <h6 class="fw-bold">Challenge: </h6>
+                              <p class="mb-0">
+                                Enable video calling for appointments on any web or mobile app
+                              </p>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="discoverCard d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-center gap-lg-4 px-5 flex-grow-1 text-black mb-3">
+                          <figure class="discoverCard__icon-container">
+                              <img class="discoverCard__icon" src="assets/icon-12.png" alt=icon>
+                          </figure>
+                          <div class="w-100">
+                              <h6 class="fw-bold">Solution: </h6>
+                              <ul class="square">
+                                <li>Easy to use and access video features</li>
+                                <li>Reports and recordings transferable to any application</li>
+                                <li>HIPAA and GDPR compliance</li>
+                              </ul>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="discoverCard d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-center gap-lg-4 px-5 flex-grow-1 text-black mb-3">
+                          <figure class="discoverCard__icon-container">
+                              <img class="discoverCard__icon" src="assets/icon-6.png" alt=icon>
+                          </figure>
+                          <div class="w-100">
+                              <h6 class="fw-bold">Outcome: </h6>
+                              <ul class="square">
+                                <li>More natural and conversational interactions</li>
+                                <li>Customer satisfaction increase</li>
+                                <li>Highest level of conversions for greater patients and medical processes understanding</li>
+                              </ul>
+                          </div>
+                        </div>
+                  
+                      </div>
+                    </div>
+                </div>
+                <!-- Virtual Waiting room -->
+                <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab" tabindex="0">
+                    <div class="row avaya-pills__content pt-3">
+                      <div class="col-12 col-lg-5">
+                        <figure class="avaya-square avaya-border--1">
+                          <img src="assets/header-card-4.jpg" alt="" class="w-100">
+                        </figure>
+                      </div>
+                      <div class="col-12 col-lg-7">
+                        <div class="discoverCard d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-center gap-lg-4 px-5 flex-grow-1 text-black mb-3">
+                          <figure class="discoverCard__icon-container">
+                              <img class="discoverCard__icon" src="assets/icon-3.png" alt=icon>
+                          </figure>
+                          <div class="w-100">
+                              <h6 class="fw-bold">Challenge: </h6>
+                              <p class="mb-0">
+                                Patients subject to social distancing and/or environments with occupancy limits
+                              </p>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="discoverCard d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-center gap-lg-4 px-5 flex-grow-1 text-black mb-3">
+                          <figure class="discoverCard__icon-container">
+                              <img class="discoverCard__icon" src="assets/icon-12.png" alt=icon>
+                          </figure>
+                          <div class="w-100">
+                              <h6 class="fw-bold">Solution: </h6>
+                              <ul class="square">
+                                <li>Cloud-based virtual waiting room</li>
+                                <li>Reports and recordings transferable to any application</li>
+                                <li>Virtual queue call notifications</li>
+                                <li>Support for chat, SMS and social media channels</li>
+                                <li>HIPAA compliance</li>
+                              </ul>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="discoverCard d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-center gap-lg-4 px-5 flex-grow-1 text-black mb-3">
+                          <figure class="discoverCard__icon-container">
+                              <img class="discoverCard__icon" src="assets/icon-6.png" alt=icon>
+                          </figure>
+                          <div class="w-100">
+                              <h6 class="fw-bold">Outcome: </h6>
+                              <ul class="square">
+                                <li>Improved security and compliance with social distancing regulations</li>
+                                <li>Shorter waiting time</li>
+                                <li>Staff cost reduction</li>
+                              </ul>
+                          </div>
+                        </div>
+                  
+                      </div>
+                    </div>
+                </div>
+                <!-- Automated transactions -->
+                <div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab" tabindex="0">
+                    <div class="row avaya-pills__content pt-3">
+                      <div class="col-12 col-lg-5">
+                        <figure class="avaya-square avaya-border--1">
+                          <img src="assets/header-card-5.jpg" alt="" class="w-100">
+                        </figure>
+                      </div>
+                      <div class="col-12 col-lg-7">
+                        <div class="discoverCard d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-center gap-lg-4 px-5 flex-grow-1 text-black mb-3">
+                          <figure class="discoverCard__icon-container">
+                              <img class="discoverCard__icon" src="assets/icon-3.png" alt=icon>
+                          </figure>
+                          <div class="w-100">
+                              <h6 class="fw-bold">Challenge: </h6>
+                              <p class="mb-0">
+                                Customer service agents performing large volumes of simple and repetitive processes such as requesting a 2nd payment method, assist paying bills, changing services and appointment details, etc., leading to long waiting times and/or high contact center costs.
+                              </p>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="discoverCard d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-center gap-lg-4 px-5 flex-grow-1 text-black mb-3">
+                          <figure class="discoverCard__icon-container">
+                              <img class="discoverCard__icon" src="assets/icon-12.png" alt=icon>
+                          </figure>
+                          <div class="w-100">
+                              <h6 class="fw-bold">Solution: </h6>
+                              <ul class="square">
+                                <li>Cloud-based AI-enabled automation for simple and recurring transactions</li>
+                                <li>Support for voice, SMS, chat and social media channels</li>
+                                <li>Easy workflows creation, integrated with company applications and databases</li>
+                                <li>HIPAA, PCI and GDPR compliance</li>
+                              </ul>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="discoverCard d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-center gap-lg-4 px-5 flex-grow-1 text-black mb-3">
+                          <figure class="discoverCard__icon-container">
+                              <img class="discoverCard__icon" src="assets/icon-6.png" alt=icon>
+                          </figure>
+                          <div class="w-100">
+                              <h6 class="fw-bold">Outcome: </h6>
+                              <ul class="square">
+                                <li>Contact center cost reduction</li>
+                                <li>Agents can focus on high value-added activities</li>
+                                <li>Greater customer satisfaction</li>
+                              </ul>
+                          </div>
+                        </div>
+                  
+                      </div>
+                    </div>
+                </div>
+              </div>
+  
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gray-section pb-5">
+    <div class="container">
+      <div class="row justify-content-center pt-5">
+        <div class="col-12 col-lg-8">
+          <div class="call mb-5">
+            <p class="text-center fw-bold">
+              Equip your employees with personalized experiences with all the information to proactively answer customer queries in a modern and intuitive workspace. Your employees can handle multiple interactions simultaneously by receiving data from different sources and dynamic screen shifting.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-12">
+          <div class="mb-5">
+            <CarouselComplementary/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Banner title="Build the best healthcare experiences NOW" btnText="More Information" btnLink="#form"/>
+  <section class="container-fluid gray-section pb-5">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-12">
+          <div class="pt-5 mb-5">
+            <h2 class="text-black text-center text-uppercase avaya-title">
+              Why using Avaya for Healthcare?
+              </h2>
+              <h5 class="text-black text-center">
+              <b>More than 5,800 healthcare institutions trust Avaya</b>
+              </h5>
+        
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5 mb-5">
+        <div class="col-12 col-lg-3 card-experience">
+     
+          <div class="p-3 pb-0 text-center card-experience-container__title">
+            <h5>
+              <b>Market reputation</b>
+            </h5>
+          </div>
+          <div class="p-3 pt-4 card-experience-container__list">
+            
+            <p>
+              <b>#1</b> global market share in Contact Center, IVR, Unified Messaging and Audio Conferencing
+            </p>
+    
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 card-experience">
+     
+          <div class="p-3 pb-0 text-black text-center card-experience-container__title card-experience-container__title--yellow">
+            <h5>
+              <b>Healthcare Expertise</b>
+            </h5>
+          </div>
+          <div class="p-3 pt-4 card-experience-container__list">
+            <ul class="">
+              <li>Thousands of healthcare customers worldwide trust Avaya</li>
+              <li>More than 10 years of experience in the healthcare market</li>
+            
+            </ul>
+      
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 card-experience">
+        
+          <div class="p-3 pb-0  text-center card-experience-container__title card-experience-container__title--green">
+            <h5 class="text-black">
+              <b>Solutions and Services</b>
+            </h5>
+          </div>
+          <div class="p-3 pt-4 card-experience-container__list">
+            <ul class="">
+              <li>Innovation Awards</li>
+              <li>Services used by 95% of Fortune 500 companies</li>
+              <li>Partnerships that accelerate implementation and reduces risks</li>
+         
+            </ul>
+      
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 card-experience">
+        
+          <div class="p-3 pb-0  text-center card-experience-container__title card-experience-container__title--purple">
+            <h5>
+              <b>Speed to Market</b>
+            </h5>
+          </div>
+          <div class="p-3 pt-4 card-experience-container__list">
+            <ul class="mb-4">
+              <li>Open, scalable and reliable architecture</li>
+              <li>Seamless integration</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="navy-section call-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="my-5 py-5">
+            <h2 class="text-white text-center text-uppercase avaya-title mt-4">
+              Avaya Experience Platform and Technology
+            </h2>
+            <h5 class="text-white text-center">
+              <b>Our combinable, scalable and flexible systems create the perfect ecosystem to create experiences</b>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section>
+    <div class="container pb-5">
+      <div class="row pt-5 justify-content-between align-items-center">
+        <div class="col-12 col-lg-5 px-3">
+          <h2 class="text-black  text-uppercase avaya-title">
+            Build the best
+            healthcare
+            experiences now
+          </h2>
+          <h5 class="text-black">
+            <b>Fill in your data to download the infographic</b>
+          </h5>
+        </div>
+        <div class="col-12 col-lg-7 p-0">
+          <div class="px-3">
+            <Form />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <Footer />
+</Layout>
+<!-- FAB & NAV functionality -->
+<script>
+  // Get the button
+  let mybutton = document.getElementById("topBtn");
+  let nav = document.querySelector(".navbar");
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction();
+  };
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      mybutton.style.display = "block";
+      nav.classList.add("navDown");
+    } else {
+      mybutton.style.display = "none";
+      nav.classList.remove("navDown");
+    }
+  }
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  mybutton.addEventListener("click", () => {
+    topFunction();
+  });
+
+
+  function animateNumbers() {
+        const counters = document.querySelectorAll('.counter__number');
+        const duration = 4000; // Duración total de la animación en milisegundos
+        const frameDuration = 900 / 30; // Duración de cada cuadro (60 cuadros por segundo)
+
+        counters.forEach(counter => {
+          const target = +counter.getAttribute('data-target');
+          const increment = target / (duration / frameDuration);
+          let currentValue = 0;
+
+          const animate = () => {
+            currentValue += increment;
+
+            if (currentValue < target) {
+              counter.innerText = Math.ceil(currentValue);
+              requestAnimationFrame(animate);
+            } else {
+              counter.innerText = target;
+            }
+          };
+
+          animate();
+        });
+      }
+
+      let counter = document.querySelector("#counter-section");
+
+      // OBSERVER
+      let observerCounter = new IntersectionObserver((entries, observer) => {
+        for (let entry of entries) {
+            if (entry.isIntersecting) {
+              animateNumbers()
+            }
+        }
+      });
+      observerCounter.observe(counter);
+</script>
+
+
+
+<style>
+  .bg-blue-feather {
+    background-color: var(--navy);
+    background-image: url("https://www.avaya.com/static/avaya/assets/images/homepage/case_study_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: start;
+    background-attachment: fixed;
+    background-position: center;
+    background-position-y: 10%;
+  }
+
+  @media (max-width: 991.98px){
+    .hero {
+    background-color: var(--navy);
+    background-image: none;
+    
+    }
+  }
+
+
+  .btn-back-arrow {
+    filter: brightness(0);
+    transform: rotate(270deg);
+    font-size: 10px;
+    width: 16px;
+  }
+
+  .square {
+    list-style: square;
+  }
+
+  .advantage-card {
+    place-items: center;
+  }
+
+  .category {
+    min-width: 300px;
+  }
+
+  .category button{
+    width: 30%;
+  }
+
+  @media (max-width: 991.98px){
+    .category button{
+     width: 100%;
+    }
+
+  }
+
+  .nav-link {
+    border-radius: 0 !important;
+    color: var(--white);
+    padding: 8px 32px;
+  }
+
+  .nav-link:hover {
+    color: var(--white);
+  }
+
+  .nav-link.active {
+    background-color: var(--green) !important;
+    color: var(--black) !important;
+    font-weight: bold;
+  }
+
+  .nav-item{
+    position: relative;
+  }
+
+  .nav-link.active::after{
+    content: "";
+    width: 1px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    background-color: var(--gray-200);
+    transform-origin: top;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 991.98px){
+  	.nav-link.active::after{
+      display: none;
+    }
+  }
+
+  .discover-container{
+	  background-color: var(--white);
+    padding: 32px 0px;
+    box-shadow: var(--shadow);
+    min-height: 902px;
+    position: relative;
+    margin: 0 8px;
+  }
+
+  .discover-title{
+    padding: 16px;
+    position: relative;
+    top: -32px;
+    right: 0;
+    left: 0;
+    background-color: var(--green);
+  }
+
+  .discoverCard{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    .discoverCard__icon-container{
+        position: relative;
+    }
+
+    .discoverCard__icon-container::after{
+        content: "";
+        display: block;
+        height: 64px;
+        width: 95%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 0;
+        margin: 0 auto;
+    }
+
+    .discoverCard__icon{
+        position: relative;
+        z-index: 1;
+        width: 72px;
+        margin-bottom: 8px;
+    }
+
+
+  .gray-section{
+    background-color: var(--gray-100);
+  }
+
+  .navy-section{
+    background-color: var(--navy);
+  }
+
+  .card-experience-container__title{
+    background-color: var(--red);
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    color: var(--white);
+    box-shadow: var(--shadow);
+    font-size: 14px;
+    z-index: 1;
+  }
+
+  .card-experience-container__title--yellow{
+    background-color: var(--yellow);
+    color: var(--black)
+  }
+
+  .card-experience-container__title--navy{
+    background-color: var(--navy);
+    color: var(--white)
+  }
+
+  .card-experience-container__title--green{
+    background-color: var(--green);
+  }
+
+  .card-experience-container__title--purple{
+    background-color: var(--purple);
+  }
+  .card-experience-container__title--blue{
+    background-color: var(--blue);
+  }
+
+
+
+
+
+  .card-experience-container__list ul{
+    list-style: square;
+  }
+  .card-experience-container__list ul li{
+    margin-bottom: 8px;
+  }
+
+  .card-experience-container__list p{
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .card-experience{
+    transition: all .3s ease;
+  }
+
+  .card-experience:hover{
+    transform: translateY(-16px);
+    transition: all .3s ease;
+  }
+
+  .card-experience-container__list{
+    box-shadow: var(--shadow);
+    font-size: 14px;
+    background-color: var(--white);
+    position: relative;
+    opacity: 1;
+    transition: all .3s ease;
+    min-height: 180px;
+  }
+
+
+
+  .download-btn{
+    position: absolute;
+    bottom: -3%;
+    right: 0;
+    left: 0;
+  }
+
+  .counter{
+    padding: 16px;
+  }
+
+  .counter__number{
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: var(--font-title);
+  }
+
+  .counter__number::after{
+    content: '%';
+  }
+
+  .counter__number::before{
+    content: "";
+    display: block;
+    width: 30%;
+    height: 6px;
+    margin: 4px 0;
+    background-color: var(--yellow);
+    position: absolute;
+    bottom: -12px;
+  }
+
+  .avaya-pills{
+    border-bottom: 1px solid var(--gray-200);
+    padding-bottom: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .call{
+    border: 1px solid var(--gray-200);
+    font-size: 18px;
+    padding: 40px;
+    position: relative;
+    z-index: 11;
+    background-color: var(--white);
+  }
+
+  .call::after{
+    content: "";
+    width: 1px;
+    height: 48px;
+    display: block;
+    position: absolute;
+    background-color: var(--gray-200);
+    transform-origin: top;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 0;
+  }
+
+  .call-2{
+    margin-top: -10%;
+  }
+
+
+</style>

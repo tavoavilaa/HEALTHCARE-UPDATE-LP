@@ -1,0 +1,48 @@
+---
+import Button from "../components/Button.astro";
+
+export interface Props {
+    title: string;
+    description?: string;
+    btnText: string;
+    btnLink: string;
+    complementaryText?: string;
+}
+
+const   {
+            title="Lorem Ipsum",
+            btnText = "Lorem Ipsum",
+            btnLink
+        } = Astro.props;
+---
+
+<div class="avaya-border--3">
+  <section class="container-fluid black-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="py-5">
+            <h2 class="text-white text-center text-uppercase avaya-title ">
+              {title}
+            </h2>
+            <!-- <h5 class="text-white text-center">
+              <b>
+                {description}
+              </b>
+            </h5> -->
+            <div class="text-center mt-4">
+              <Button color="blue" text={btnText} href={btnLink} />
+            </div>
+            <!-- <p class="text-center text-white mt-0">
+              <em
+                >
+                {complementaryText}
+                </em
+              >
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
